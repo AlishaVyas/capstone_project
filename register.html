@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>  
+    <body>
+        <h1>Registration Page</h1>
+        <form name = "register" method = "GET" action = "x.php">
+        <table>
+            <tr>
+                <td><label for = "fname">First name</label></td>
+                <td><input placeholder = "Enter the first name"
+                     type = "text" id = "fname" pattern = "([A-Za-z\s]+)" /></td>
+            </tr>
+            <tr>
+                <td><label>Last name</label></td>
+                <td><input type = "text" name = "lname" required /></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type = "text" name = "contact" required /></td>
+7            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type = "password" name = "pword" required /></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type = "date" name = "dob" required /></td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <input type = "checkbox" name = "qual"
+                     value = "B.Sc." />B.Sc.<br />
+                    <input type = "checkbox" name = "qual"
+                     value = "M.C.A" />M.C.A<br />
+                    <input type = "checkbox" name = "qual"
+                     value = "M.Tech." />M.Tech.<br />
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type = "radio" name = "gender"
+                     value = "Male" />Male<br />
+                    <input type = "radio" name = "gender"
+                     value = "Female" />Female<br />
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name = "city" multiple>
+                        <option value = "">--</option>
+                        <option value = "knp">Kanpur</option>
+                        <option value = "lck">Lucknow</option>
+                        <option value = "bng" selected>Bangalore</option>
+                        <option value = "del">Delhi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>
+                    <input type = "number" name = "exp" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan = "2" align = "right">
+                    <input type = "submit" value = "Submit" />
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
